@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Biography of Narendra Modi">
+
+    <meta name="keywords"
+        content="Narendra Modi, Modi Biography, Prime Minister of India">
+
+    <meta name="author" content="Pranshoo Rathore">
+
+    <title>Narendra Modi Biography</title>
+
+
+    <style>
+
+        /* =========================
+           BASIC STYLING
+        ========================= */
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #f5f5f5;
+            color: #222;
+        }
+
+
+        /* =========================
+           HEADER
+        ========================= */
+
+        header {
+            background-color: #ff9933;
+            color: white;
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 48px;
+            font-weight: 900;
+        }
+
+        header p {
+            font-size: 20px;
+            margin: 10px 0 0;
+        }
+
+
+        /* =========================
+           NAVIGATION
+        ========================= */
+
+        nav {
+            background-color: #138808;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 15px;
+            gap: 10px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 15px;
+            border-radius: 5px;
+        }
+
+        nav a:hover {
+            background-color: white;
+            color: #138808;
+        }
+
+
+        /* =========================
+           MAIN CONTENT
+        ========================= */
+
+        main {
+            width: 90%;
+            max-width: 1100px;
+            margin: auto;
+        }
+
+
+        /* =========================
+           SECTIONS
+        ========================= */
+
+        section {
+            background-color: white;
+            margin: 30px 0;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+        }
+
+        section h2 {
+            color: #138808;
+            font-size: 30px;
+            border-bottom: 3px solid #ff9933;
+            padding-bottom: 10px;
+        }
+
+
+        /* =========================
+           INTRODUCTION
+        ========================= */
+
+        .intro {
+            text-align: center;
+        }
+
+        .intro img {
+            width: 250px;
+            max-width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 15px;
+            border: 3px solid #222;
+        }
+
+
+        /* =========================
+           PARAGRAPHS
+        ========================= */
+
+        p {
+            font-size: 18px;
+            line-height: 1.7;
+        }
+
+
+        /* =========================
+           LISTS
+        ========================= */
+
+        ul,
+        ol {
+            padding-left: 30px;
+        }
+
+        li {
+            margin: 12px 0;
+            font-size: 17px;
+        }
+
+
+        /* =========================
+           CARDS
+        ========================= */
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        .card {
+            background-color: #fff3e0;
+            padding: 20px;
+            border-radius: 15px;
+            border-left: 5px solid #ff9933;
+        }
+
+        .card h3 {
+            color: #138808;
+            margin-top: 0;
+        }
+
+
+        /* =========================
+           TABLE
+        ========================= */
+
+        .table-container {
+            width: 100%;
+            overflow-x: auto;
+        }
+
+        table {
+            width: 100%;
+            min-width: 500px;
+            border-collapse: collapse;
+        }
+
+        th,
+        td {
+            border: 1px solid black;
+            padding: 15px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #ff9933;
+            color: white;
+        }
+
+
+        /* =========================
+           VIDEO
+        ========================= */
+
+        .video-container {
+            position: relative;
+            width: 100%;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            border-radius: 10px;
+        }
+
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+
+        /* =========================
+           FORM
+        ========================= */
+
+        form {
+            width: 100%;
+        }
+
+        label {
+            display: block;
+            margin: 15px 0;
+            font-size: 17px;
+            font-weight: bold;
+        }
+
+        input,
+        select {
+            width: 100%;
+            max-width: 500px;
+            padding: 12px;
+            margin-top: 8px;
+            border: 1px solid #aaa;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        input[type="submit"] {
+            width: auto;
+            background-color: #138808;
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0b5f05;
+        }
+
+
+        /* =========================
+           FOOTER
+        ========================= */
+
+        footer {
+            background-color: #138808;
+            color: white;
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 30px;
+        }
+
+        footer p {
+            margin: 5px;
+        }
+
+
+        /* =========================
+           TABLET
+           768px AND BELOW
+        ========================= */
+
+        @media (max-width: 768px) {
+
+            header {
+                padding: 30px 15px;
+            }
+
+            header h1 {
+                font-size: 38px;
+            }
+
+            header p {
+                font-size: 18px;
+            }
+
+            main {
+                width: 94%;
+            }
+
+            section {
+                padding: 20px;
+                margin: 20px 0;
+            }
+
+            section h2 {
+                font-size: 26px;
+            }
+
+            p {
+                font-size: 17px;
+            }
+
+            .cards {
+                grid-template-columns: 1fr;
+            }
+
+            nav {
+                flex-direction: column;
+            }
+
+            nav a {
+                width: 100%;
+                text-align: center;
+            }
+
+        }
+
+
+        /* =========================
+           MOBILE
+           480px AND BELOW
+        ========================= */
+
+        @media (max-width: 480px) {
+
+            header {
+                padding: 25px 10px;
+            }
+
+            header h1 {
+                font-size: 30px;
+            }
+
+            header p {
+                font-size: 16px;
+            }
+
+            main {
+                width: 96%;
+            }
+
+            section {
+                padding: 15px;
+                margin: 15px 0;
+                border-radius: 10px;
+            }
+
+            section h2 {
+                font-size: 23px;
+            }
+
+            p {
+                font-size: 16px;
+                line-height: 1.6;
+            }
+
+            li {
+                font-size: 16px;
+            }
+
+            .intro img {
+                width: 200px;
+                height: 250px;
+            }
+
+            .card {
+                padding: 15px;
+            }
+
+            table {
+                font-size: 14px;
+            }
+
+            th,
+            td {
+                padding: 10px;
+            }
+
+            input,
+            select {
+                max-width: 100%;
+            }
+
+            footer {
+                padding: 20px 10px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- =========================
+         HEADER
+    ========================= -->
+
+    <header>
+
+        <h1>Narendra Modi</h1>
+
+        <p>Prime Minister of India</p>
+
+    </header>
+
+
+    <!-- =========================
+         NAVIGATION
+    ========================= -->
+
+    <nav>
+
+        <a href="#about">About</a>
+
+        <a href="#early-life">Early Life</a>
+
+        <a href="#career">Political Career</a>
+
+        <a href="#achievements">Achievements</a>
+
+        <a href="#video">Video</a>
+
+    </nav>
+
+
+    <!-- =========================
+         MAIN CONTENT
+    ========================= -->
+
+    <main>
+
+
+        <!-- =========================
+             ABOUT
+        ========================= -->
+
+        <section class="intro" id="about">
+
+            <h2>About Narendra Modi</h2>
+
+
+            <!-- Narendra Modi Wikimedia Commons Image -->
+
+            <img
+                <img class="fancybox-image" src="https://www.pmindia.gov.in/wp-content/uploads/2025/12/01.jpg">
+                
+
+
+            <p>
+                Narendra Damodardas Modi is an Indian politician who
+                has served as the Prime Minister of India since May 2014.
+                He is a senior leader of the Bharatiya Janata Party (BJP).
+            </p>
+
+            <p>
+                Before becoming Prime Minister, he served as the
+                Chief Minister of Gujarat from 2001 to 2014.
+            </p>
+
+        </section>
+
+
+        <!-- =========================
+             EARLY LIFE
+        ========================= -->
+
+        <section id="early-life">
+
+            <h2>Early Life</h2>
+
+            <p>
+                Narendra Damodardas Modi was born on 17 September 1950
+                in Vadnagar, Gujarat, India.
+            </p>
+
+            <p>
+                He grew up in a modest family and developed an interest
+                in public service from an early age.
+            </p>
+
+            <p>
+                During his early years, he became associated with the
+                Rashtriya Swayamsevak Sangh (RSS), which influenced
+                his political development.
+            </p>
+
+        </section>
+
+
+        <!-- =========================
+             EDUCATION
+        ========================= -->
+
+        <section>
+
+            <h2>Education</h2>
+
+            <ul>
+
+                <li>
+                    School education in Vadnagar, Gujarat
+                </li>
+
+                <li>
+                    Bachelor's degree from the University of Delhi
+                </li>
+
+                <li>
+                    Master's degree in Political Science from
+                    Gujarat University
+                </li>
+
+            </ul>
+
+        </section>
+
+
+        <!-- =========================
+             POLITICAL CAREER
+        ========================= -->
+
+        <section id="career">
+
+            <h2>Political Career</h2>
+
+
+            <div class="cards">
+
+
+                <div class="card">
+
+                    <h3>Chief Minister of Gujarat</h3>
+
+                    <p>
+                        Narendra Modi became the Chief Minister of
+                        Gujarat in October 2001 and served in the
+                        position until May 2014.
+                    </p>
+
+                </div>
+
+
+                <div class="card">
+
+                    <h3>Prime Minister of India</h3>
+
+                    <p>
+                        Narendra Modi became the Prime Minister of
+                        India in May 2014 after the Bharatiya Janata
+                        Party won the general election.
+                    </p>
+
+                </div>
+
+
+                <div class="card">
+
+                    <h3>Second Term</h3>
+
+                    <p>
+                        In 2019, the BJP won another majority in the
+                        Lok Sabha, and Narendra Modi began his second
+                        term as Prime Minister.
+                    </p>
+
+                </div>
+
+
+                <div class="card">
+
+                    <h3>Third Term</h3>
+
+                    <p>
+                        Following the 2024 general election,
+                        Narendra Modi began his third consecutive
+                        term as Prime Minister of India.
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             IMPORTANT INFORMATION
+        ========================= -->
+
+        <section>
+
+            <h2>Important Information</h2>
+
+
+            <div class="table-container">
+
+                <table>
+
+                    <thead>
+
+                        <tr>
+
+                            <th>Information</th>
+
+                            <th>Details</th>
+
+                        </tr>
+
+                    </thead>
+
+
+                    <tbody>
+
+                        <tr>
+
+                            <td>Full Name</td>
+
+                            <td>
+                                Narendra Damodardas Modi
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>Date of Birth</td>
+
+                            <td>
+                                17 September 1950
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>Birthplace</td>
+
+                            <td>
+                                Vadnagar, Gujarat
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>Political Party</td>
+
+                            <td>
+                                Bharatiya Janata Party
+                            </td>
+
+                        </tr>
+
+
+                        <tr>
+
+                            <td>Position</td>
+
+                            <td>
+                                Prime Minister of India
+                            </td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             MAJOR INITIATIVES
+        ========================= -->
+
+        <section id="achievements">
+
+            <h2>Major Initiatives</h2>
+
+            <ol>
+
+                <li>
+                    Make in India
+                </li>
+
+                <li>
+                    Digital India
+                </li>
+
+                <li>
+                    Swachh Bharat Mission
+                </li>
+
+                <li>
+                    Pradhan Mantri Jan Dhan Yojana
+                </li>
+
+                <li>
+                    Startup India
+                </li>
+
+                <li>
+                    Ayushman Bharat
+                </li>
+
+            </ol>
+
+        </section>
+
+
+        <!-- =========================
+             PERSONAL INTERESTS
+        ========================= -->
+
+        <section>
+
+            <h2>Personal Interests</h2>
+
+            <p>
+
+                Narendra Modi is known for his interest in
+
+                <span style="color: green; font-weight: bold;">
+                    yoga, writing and public communication.
+                </span>
+
+            </p>
+
+        </section>
+
+
+        <!-- =========================
+             VIDEO
+        ========================= -->
+
+        <section id="video">
+
+            <h2>Biography Video</h2>
+
+
+            <div class="video-container">
+
+                <iframe
+                    src="https://www.youtube.com/embed/FLQoCNzoT2o"
+                    title="Narendra Modi Biography Video"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen>
+                </iframe>
+
+            </div>
+
+        </section>
+
+
+        <!-- =========================
+             FEEDBACK FORM
+        ========================= -->
+
+        <section>
+
+            <h2>Feedback Form</h2>
+
+
+            <form>
+
+
+                <label for="name">
+
+                    Name:
+
+                    <input
+                        type="text"
+                        id="name"
+                        name="name"
+                        placeholder="Enter your name"
+                        required>
+
+                </label>
+
+
+                <label for="email">
+
+                    Email:
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Enter your email"
+                        required>
+
+                </label>
+
+
+                <label for="state">
+
+                    Select State:
+
+                    <select
+                        id="state"
+                        name="state">
+
+                        <option>Maharashtra</option>
+
+                        <option>Goa</option>
+
+                        <option>Karnataka</option>
+
+                        <option>Madhya Pradesh</option>
+
+                        <option>Uttar Pradesh</option>
+
+                    </select>
+
+                </label>
+
+
+                <input
+                    type="submit"
+                    value="Submit">
+
+
+            </form>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- =========================
+         FOOTER
+    ========================= -->
+
+    <footer>
+
+        <p>
+            Narendra Modi's Biography
+        </p>
+
+    </footer>
+
+
+</body>
+
+</html>
